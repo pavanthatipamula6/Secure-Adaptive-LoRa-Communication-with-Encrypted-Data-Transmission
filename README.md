@@ -1,1 +1,2 @@
 # Secure-Adaptive-LoRa-Communication-with-Encrypted-Data-Transmission
+Designed and implemented a secure long-range IoT communication system using STM32 microcontrollers and LoRa transceivers, supporting up to 8 nodes over 3–5 km. Developed embedded firmware featuring AES-128 encryption, adaptive frequency hopping, and dynamic LoRa parameter tuning (SF, BW, CR) to improve reliability and power efficiency. Built low-power firmware and a custom Linux device driver on Raspberry Pi 5 for LoRa interfacing and real-time decryption, achieving >95% packet delivery rate.
