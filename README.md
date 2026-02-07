@@ -1,2 +1,11 @@
 # Secure-Adaptive-LoRa-Communication-with-Encrypted-Data-Transmission
 Designed and implemented a secure long-range IoT communication system using STM32 microcontrollers and LoRa transceivers, supporting up to 8 nodes over 3–5 km. Developed embedded firmware featuring AES-128 encryption, adaptive frequency hopping, and dynamic LoRa parameter tuning (SF, BW, CR) to improve reliability and power efficiency. Built low-power firmware and a custom Linux device driver on Raspberry Pi 5 for LoRa interfacing and real-time decryption, achieving >95% packet delivery rate.
+
+
+Abstract
+
+Wireless IoT communication systems based on LoRa (Long Range) technology offer significant advantages in terms of low power consumption and long-distance data transmission. However, data transmitted over open wireless channels is inherently vulnerable to interception, replay attacks, and packet collisions when multiple nodes attempt to communicate simultaneously. This project presents an Adaptive Secure LoRa Communication System that enhances both security and reliability of LoRa-based networks through encrypted data transmission and controlled medium access.
+
+The proposed system integrates AES-128 encryption in Counter (CTR) mode to ensure data confidentiality while maintaining low computational overhead suitable for resource-constrained IoT devices. To prevent key exposure, encryption keys are generated dynamically at runtime, never transmitted over the LoRa channel, and not permanently stored in memory. Additionally, a beacon-based synchronization mechanism combined with TDMA (Time Division Multiple Access) is implemented, assigning each node a unique transmission time slot to eliminate packet collisions and improve network efficiency.
+
+The system also incorporates acknowledgment handling and replay protection, ensuring data integrity and protection against unauthorized retransmission of captured packets. Experimental evaluation demonstrates that the proposed approach significantly improves secure data delivery while preserving LoRa’s low-power and long-range advantages. This solution is well-suited for secure IoT applications such as smart agriculture, industrial monitoring, and remote sensing systems where both reliability and security are critical requirements.
